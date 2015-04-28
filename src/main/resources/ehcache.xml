@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ehcache>
+    <defaultCache maxElementsInMemory="500" eternal="false"
+                overflowToDisk="false" memoryStoreEvictionPolicy="LFU" />
+  
+    <cache name="buscaTodasLinhas" maxElementsInMemory="10" timeToLiveSeconds="10000" />
+    <cache name="buscaFornecedores" maxElementsInMemory="10" timeToLiveSeconds="10000" />
+    <cache name="buscaFamiliasPeloIdLinha" maxElementsInMemory="50" timeToLiveSeconds="1000" />
+    <cache name="buscaGruposPeloIdFamilia" maxElementsInMemory="50" timeToLiveSeconds="1000" />
+    <cache name="buscaFornecedorPeloId" maxElementsInMemory="50" timeToLiveSeconds="500" />
+    <cache name="buscaEmpresas" maxElementsInMemory="50" timeToLiveSeconds="1000" />
+    <cache name="buscarMetaHeaderPorIdProduto" maxElementsInMemory="50" timeToLiveSeconds="1000" />
+
+</ehcache>
