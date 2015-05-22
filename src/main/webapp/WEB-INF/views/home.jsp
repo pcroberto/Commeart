@@ -1,4 +1,5 @@
 
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -40,9 +41,11 @@
             <li role="presentation"><a href="/contato">Contato</a></li>
           </ul>
         </nav>
-        <h3 class="text-muted">Commerart</h3>
+        <h3 class="text-muted">Commerart ${userName}</h3>
       </div>
-
+      <c:if test="${welcomeMessage}">
+          <div class="alert alert-success" role="alert">${welcomeMessage}</div>
+      </c:if>
       <div class="jumbotron">
         <h1>Integração com o cliente</h1>
         <p class="lead">Para nossos clientes abrimos a possibilidade de gerenciar suas contas na Commerart através da nossa página Web a partir de qualquer dispositivo conectado!</p>
